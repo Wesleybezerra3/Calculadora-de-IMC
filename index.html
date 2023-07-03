@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="Imagem/logo.png" type="image/x-icon" />
+    <title>Calculadora de Imc</title>
+  </head>
+  <body>
+    <header>
+      <img src="Imagem/logo.png" alt="" />
+      <h1 class="logo">
+        facilitating <br />
+        Group
+      </h1>
+      
+    </header>
+
+    <div class="texto"><h1>Calculadora Imc</h1></div>
+
+    <div class="texto">
+      <h2>O que é IMC?</h2>
+      <p>
+        <strong>IMC</strong> é a sigla para Índice de Massa Corpórea, parâmetro
+        adotado pela Organização Mundial de Saúde para calcular o peso ideal de
+        cada.
+      </p>
+
+      <p>
+        O índice é calculado da seguinte maneira: divide-se o peso do paciente
+        pela sua altura elevada ao quadrado. <br />Diz-se que o indivíduo tem
+        peso normal quando o resultado do IMC está entre 18,5 e 24,9.
+      </p>
+
+      <h2>Quer descobrir seu IMC?</h2>
+      <p>
+        Insira seu peso e sua altura nos campos abaixo e compare com os índices
+        da tabela. <br />
+        <strong>Importante:</strong> siga os exemplos e use pontos como
+        separadores.
+      </p>
+    </div>
+
+    <section>
+      <h2>Preencha com os dados correspondetes:</h2>
+      <form>
+        <div>
+          <input class="inpcal" id="alt" type="text" placeholder="Altura" />
+          <input class="inpcal" id="peso" type="text" placeholder="Peso" />
+        </div>
+        <div>
+          <input
+            class="inpcal"
+            type="button"
+            value="Calcular"
+            onclick="calcular()"
+          />
+        </div>
+      </form>
+      <div></div>
+    </section>
+
+    <div id="res"></div>
+
+    <!--Tabela imc-->
+    <table id="tabelaImc">
+      <thead>
+        <tr>
+          <th class="td-first-col" scope="col">Resultado</th>
+          <th scope="col">Situação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="tab_imc_1">
+          <td class="rowTable">Abaixo de 17</td>
+          <td>Muito abaixo do <em>peso</em></td>
+        </tr>
+        <tr class="tab_imc_2">
+          <td class="rowTable">Entre 17 e 18,49</td>
+          <td>Abaixo do <em>peso</em></td>
+        </tr>
+        <tr class="tab_imc_3">
+          <td class="rowTable">Entre 18,5 e 24,99</td>
+          <td><em>Peso</em> normal</td>
+        </tr>
+        <tr class="tab_imc_4">
+          <td class="rowTable">Entre 25 e 29,99</td>
+          <td>Acima do <em>peso</em></td>
+        </tr>
+        <tr class="tab_imc_5">
+          <td class="rowTable">Entre 30 e 34,99</td>
+          <td><em>Obesidade</em> I</td>
+        </tr>
+        <tr class="tab_imc_6">
+          <td class="rowTable">Entre 35 e 39,99</td>
+          <td><em>Obesidade</em> II (severa)</td>
+        </tr>
+        <tr class="tab_imc_7">
+          <td class="rowTable">Acima de 40</td>
+          <td><em>Obesidade</em> III (mórbida)</td>
+        </tr>
+      </tbody>
+    </table>
+
+   
+      
+
+    <footer>
+      <p>&copy;facilitating Group</p>
+      <p>Facilitando sua vida!</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
